@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  line-height: 1.7;
+  font-size: 1.1rem;
+  margin: 0;
+  color: #27253d;
+  background: #e6f3f8;
+}
+
+main {
+  position: relative;
+  padding: 1rem 1rem 3rem;
+  min-height: calc(100vh - 4rem);
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.hidden {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+#searchType{
+	margin-left:50px;
+	margin-right:-5px;
+}
+
+
+.pagination-container {
+  width: calc(100% - 2rem);
+  display: flex;
+  align-items: center;
+  bottom: 0;
+  padding: 1rem 0;
+  justify-content: center;
+}
+
+.pagination-number,
+.pagination-button{
+  font-size: 1.1rem;
+  background-color: transparent;
+  border: none;
+  margin: 0.25rem 0.25rem;
+  cursor: pointer;
+  height: 2.5rem;
+  width: 2.5rem;
+  border-radius: .2rem;
+}
+
+.pagination-number:hover,
+.pagination-button:not(.disabled):hover {
+  background: #fff;
+}
+
+.pagination-number.active {
+  color: #fff;
+  background: #0085b6;
+}
+
+#paginated-list li{
+	border: 1px solid #ccc;
+    list-style-type: none;
+    padding: 10px;
+    margin-bottom: 5px; 
+}
+
+#paginated-list li:first-child{
+	font-weight: bold;
+}
+#paginated-list li div{
+	width: 23%;
+    display: inline-block;
+}
